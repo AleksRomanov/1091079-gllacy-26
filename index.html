@@ -5,21 +5,25 @@
   <title>HTML Academy: Глейси</title>
 </head>
 
-<body bgcolor="849d8f">
+<body bgcolor="849d8f">  <!-- ЭТО ВРЕМЕННАЯ МЕРА. ЧТО БЫ ВИДЕТЬ БЕЛЫЕ ЭЛЕМЕНТЫ -->
 
 <header class="header">
   <nav class="header-nav">
-    <a class="header-logo"><img src="img/logo.svg" width="100" height="50" alt="Логотип Глэйси!"></a>
+    <a href="index.html" class="header-logo"><img src="img/logo.svg" width="100" height="50" alt="Логотип Глэйси!"></a>
     <ul class="header-menu">
-      <li><a href="catalog.html" class="header-links">Каталог</a></li>
-      <li><a href="#" class="header-links">Доставка и оплата</a></li>
-      <li><a href="#" class="header-links">О компании</a></li>
+      <li class="header-links"><a href="catalog.html">Каталог</a></li>
+      <li class="header-links"><a href="#" >Доставка и оплата</a></li>
+      <li class="header-links"><a href="#">О компании</a></li>
     </ul>
     <ul class="header-navigation">
-      <li>
-        <a href="#"><img src="img/loupe.svg" class="header-find">Поиск по товарам магазина</img></a>
-        <a href="#"><img src="img/entrance.svg" class="header-login">Вход</a>
-        <a href="#"><img src="img/basket.svg" class="header-buy">Пусто</a>
+      <li class="header-find">
+        <a href="#"><img src="img/loupe.svg">Поиск по товарам магазина</a>
+      </li>
+      <li class="header-login">
+        <a href="#"><img src="img/entrance.svg">Вход</a>
+      </li>
+      <li class="header-buy">
+        <a href="#"><img src="img/basket.svg">Пусто</a>
       </li>
     </ul>
   </nav>
@@ -31,68 +35,38 @@
 
 <main class="main">
 
-  <!--  <section>-->
-  <!--    <div>-->
-  <!--      <img src="#" width="#" height="#" alt="Фоновое мороженое">-->
-  <!--      <h1>Крем-брюле и пломбир с малиновым джемом</h1>-->
-  <!--      <button type="button">Давайте оба!</button>-->
-  <!--    </div>-->
-  <!--  </section>-->
-  <!--  <section>-->
-  <!--    <p>-->
-  <!--    <h2>Шоколадки даром!</h2></p>-->
-  <!--    <p>-->
-  <!--    <h3>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно-->
-  <!--      бесплатно.</h3></p>-->
-  <!--    <button type="button">Хочу шоколадки!</button>-->
-  <!--  </section>-->
-  <!--  <section>-->
-  <!--    <div>-->
-  <!--      <a href="#">-->
-  <!--        <img src="#" width="#" height="#" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">-->
-  <!--        <span>310 ₽/кг</span>-->
-  <!--      </a>-->
-  <!--      <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>-->
-  <!--    </div>-->
-  <!--    <div>-->
-  <!--      <a href="#">-->
-  <!--        <img src="#" width="#" height="#" alt="Сливочно-кофейное с кусочками шоколада">-->
-  <!--        <span>380 ₽/кг</span>-->
-  <!--      </a>-->
-  <!--      <p>Сливочно-кофейное с кусочками шоколада</p>-->
-  <!--    </div>-->
-  <!--    <div>-->
-  <!--      <a href="#">-->
-  <!--        <img src="#" width="#" height="#" alt="Сливочно-клубничное с присыпкой из белого шоколада">-->
-  <!--        <span>355 ₽/кг</span>-->
-  <!--      </a>-->
-  <!--      <p>Сливочно-клубничное с присыпкой из белого шоколада</p>-->
-  <!--    </div>-->
-  <!--    <div>-->
-  <!--      <a href="#">-->
-  <!--        <img src="#" width="#" height="#" alt="Сливочное крем-брюле с карамельной подливкой">-->
-  <!--        <span>415 ₽/кг</span>-->
-  <!--      </a>-->
-  <!--      <p>Сливочное крем-брюле с карамельной подливкой</p>-->
-  <!--    </div>-->
-  <!--  </section>-->
+  <!-- <section>
+    <div class="main-ice">
+      <a class="ice-first"><img src="img/ice-1.png" width="372" height="584" align="top"></a>
+      <a class="ice-first"><img src="img/ice-2.png" width="372" height="584" align="top"></a>
+      <a class="ice-first"><img src="img/podsvetka-ice.png" width="1045" height="78" align="top"></a>
+      <h1 class="">Крем-брюле и пломбир с малиновым джемом</h1>
+      <button class="give-two" type="button">Давайте оба!</button>
+    </div>
+     </section> -->
+
+  <section class="breadcrumbs">
+    <ul class="breadcrumbs-list">
+      <li><a href="index.html" class="bread-links">Главная</a></li>
+      <li><a href="catalog.html" class="bread-links">Каталог</a></li>
+      <li><a>Сливочное</a></li>
+    </ul>
+  </section>
+
   <section class="advantages">
+    <p class="p-info" font-size="24px">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
     <ul class="header-info">
-      <p class="p-info" font-size="24px"
-         font-family="Roboto">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
-        производства на развес</li>
-      <li><img src="img/ice-cream.svg" class="">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
-        проверенных временем технологий.
+      <li>
+        <img src="img/ice-cream.svg" class="">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
       </li>
-      <li><img src="img/eco.svg" class="">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
-        ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+      <li>
+        <img src="img/eco.svg" class="">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
       </li>
-      <li><img src="img/cow.svg" class="">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
-        связывает
-        долговременное сотрудничество.
+      <li>
+        <img src="img/cow.svg" class="">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
       </li>
-      <li><img src="img/thermometer.svg" class="">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
-        растаять в пути и позволяет сохранить превосходный вкус.
+      <li>
+        <img src="img/thermometer.svg" class="">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
       </li>
     </ul>
   </section>
@@ -101,8 +75,7 @@
     <a href="#" class="news-link">10 способов сервировки фруктовых щербетов к столу</a>
   </section>
   <section class="send">
-    <p class="send-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
-      происходит.
+    <p class="send-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
       Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
     <form class="email-send">
       <input class="form-email" type="email" required placeholder="email@example.com">
@@ -114,21 +87,21 @@
 
 <footer class="footer">
   <ul class="footer-social">
-    <li><a href="#"><img src="img/twitter.svg" class="footer-links">Twitter</a></li>
-    <li><a href="#"><img src="img/instagram.svg" class="footer-links">Инстаграм</a></li>
-    <li><a href="#"><img src="img/fb.svg" class="footer-links">Фейсбук</a></li>
-    <li><a href="#"><img src="img/vk.svg" class="footer-links">BK</a></li>
+    <li><a href="#" class="footer-links"><img src="img/twitter.svg" >Twitter</a></li>
+    <li><a href="#" class="footer-links"><img src="img/instagram.svg" >Инстаграм</a></li>
+    <li><a href="#" class="footer-links"><img src="img/fb.svg" >Фейсбук</a></li>
+    <li><a href="#" class="footer-links"><img src="img/vk.svg" >BK</a></li>
   </ul>
   <ul class="footer-menu">
-    <li><a href="#"><img src="img/heart.svg" class="footer-links">Для поставщиков</a></li>
-    <li><a href="#">О производстве</a></li>
-    <li><a href="#">Наши документы</a></li>
-    <li><a href="#">Экологические стандарты</a></li>
+    <li><a href="#" class="footer-links"><img src="img/heart.svg">Для поставщиков</a></li>
+    <li><a href="#" class="footer-links">О производстве</a></li>
+    <li><a href="#" class="footer-links">Наши документы</a></li>
+    <li><a href="#" class="footer-links">Экологические стандарты</a></li>
   </ul>
-  <ul class="footer-copy">
-    <a href="https://htmlacademy.ru" class="footer-right-logo"><img src="img/logo-htmlacademy.svg" width="100" height="50" alt="HTML ACADEMY"></a>
-    <small class="footer-link">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019</small>
-  </ul>
+  <div class="footer-copy">
+    <a href="https://htmlacademy.ru" class="footer-logo"><img src="img/logo-htmlacademy.svg" width="100" height="50" alt="HTML ACADEMY"></a>
+    <small class="htmlacademy-link">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019</small>
+  </div>
 </footer>
 </body>
 </html>
