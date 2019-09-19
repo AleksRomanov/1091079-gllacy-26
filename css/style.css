@@ -1,0 +1,261 @@
+
+@font-face {
+    font-family: 'roboto';
+    src: url("../fonts/roboto-bold_700") format("woff");
+    font-weight: 700; }
+@font-face {
+    font-family: 'roboto';
+    src: url("../fonts/roboto-medium_500") format("woff");
+    font-weight: 500; }
+@font-face {
+    font-family: 'roboto';
+    src: url("../fonts/roboto-regular_300") format("woff2");
+    font-weight: normal; }
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    font-family: roboto, "Tahoma", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: white;
+    background-color: #849d8f;
+}
+
+a {
+    color: white;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+.container {
+    width: 1146px;
+    padding: 0 27px;
+    margin: 0 auto;
+}
+
+.header-menu_item {
+    line-height: 18px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.link-catalog {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+}
+.drop-find {
+    background-color: white;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+ul.dropdown {
+    display: none;
+}
+li.dropdown-item {
+    color: black;
+    background-color: #fbded8;
+}
+.header-login {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.header-buy {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.small {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+.call {
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+}
+.promo-list {
+    text-align: center;
+    padding: 18px 0;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.item-fon_one {
+    background-color: #849d8f;
+}
+
+.item-fon_two {
+    background-color: #8996a6;
+}
+
+.item-fon_three {
+    background-color: #9d8b84;
+}
+.promo-button {
+    text-align: center;
+    padding: 18px 0;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    width: 280px;
+    height: 64px;
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+    border-radius: 30px;
+}
+
+.p-info {
+    font-size: 24px;
+    color: #323232;
+    font-weight: 500;
+    line-height: 30px;
+}
+.advantage-container {
+    width: 1146px;
+    padding: 0 27px;
+    margin: 0 auto;
+    color: #323232;
+}
+.advantage__fon {
+    background-image: url(../img/background/vaflya.jpg);
+    border-radius: 15px;
+    padding: 30px 20px;
+}
+.advantages-list {
+    font-size: 16px;
+    color: #323232;
+    font-weight: 300;
+    line-height: 22px;
+}
+.news {
+    background-color: #ffffff;
+    background-image: url(../img/background/strawberry-blog.jpg);
+    background-repeat: no-repeat;
+    background-position: 16% 40%;
+    border-radius: 15px;
+    min-width: 560px;
+    min-height: 220px;
+    padding: 25px 250px 25px 20px;
+    margin-right: 26px;
+}
+.news-title {
+    font-size: 16px;
+    color: #323232;
+    font-weight: 500;
+    line-height: 22px;
+}
+.news-link {
+    font-size: 24px;
+    color: #323232;
+    font-weight: 700;
+    line-height: 30px;
+}
+.send {
+    min-width: 560px;
+    min-height: 220px;
+    background-color: #f8f7f4;
+    border-radius: 15px;
+    padding: 27px 17px;
+    border: 10px solid;
+    border-image: url(../img/background/bg-post.svg);
+    border-image-slice: 10;
+
+}
+.send-text {
+    font-size: 16px;
+    color: #5a5a5a;
+    font-weight: 300;
+    line-height: 22px;
+}
+.form-email {
+    font-size: 16px;
+    color: #999999;
+    font-weight: 300;
+    line-height: 24px;
+}
+button.form-submit {
+    z-index: 1;
+    font-size: 18px;
+    color: #fefefe;
+    font-weight: 700;
+    line-height: 24px;
+    background-color: #e84e37;
+}
+.button:active {
+    color: #e84e37;
+}
+.button:hover {
+    background-color: #e84e37;
+}
+.footer-img_heart,
+footer-link_heart   {
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+}
+.footer-links_info {
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+}
+.footer-copy {
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+
+
+/*.footer-social_tw {*/
+/*    background-image: url(../img/icon/twitter.svg);*/
+/*    background-repeat: no-repeat;*/
+/*    line-height: 22px;*/
+/*}*/
+/*.footer-social_inst {*/
+/*    background-image: url(../img/icon/instagram.svg);*/
+/*    background-repeat: no-repeat;*/
+/*     line-height: 22px;*/
+/*}*/
+/*.footer-social_vk {*/
+/*    background-image: url(../img/icon/vk.svg);*/
+/*    background-repeat: no-repeat;*/
+/*     line-height: 22px;*/
+/*}*/
+/*.footer-social_fb {*/
+/*    background-image: url(../img/icon/fb.svg);*/
+/*    background-repeat: no-repeat;*/
+/*    line-height: 22px;*/
+/*}*/

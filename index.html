@@ -2,34 +2,50 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="fonts/roboto-bold_700.woff2">
+    <link type="text/css" rel="stylesheet" href="fonts/roboto-medium_500.woff2">
+    <link type="text/css" rel="stylesheet" href="fonts/roboto-regular_300.woff2">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <title>HTML Academy: Глейси</title>
 </head>
 
-<body bgcolor="849d8f">  <!-- ЭТО ВРЕМЕННАЯ МЕРА. ЧТО БЫ ВИДЕТЬ БЕЛЫЕ ЭЛЕМЕНТЫ -->
+<body>
 
 <header class="header">
-    <nav class="header-nav">
+    <nav class="container header_menu">
         <a class="header-logo"><img src="img/icon/logo.svg" width="100" height="50" alt="Логотип Глэйси!"></a>
-        <ul class="header-menu">
+        <ul class="header-navigation">
             <li class="header-menu_item">
                 <a class="link-catalog" href="catalog.html">Каталог</a>
                 <ul class="dropdown" hidden>
-                    <li class="dropdown-item"><a class="dropdown-link" href="#">Новинки</a></li>
-                    <li class="dropdown-item"><a class="dropdown-link" href="#">Сливочное</a></li>
-                    <li class="dropdown-item"><a class="dropdown-link" href="#">Щербеты</a></li>
-                    <li class="dropdown-item"><a class="dropdown-link" href="#">Фруктовый лед</a></li>
-                    <li class="dropdown-item"><a class="dropdown-link" href="#">Мелорин</a></li>
+                    <li class="dropdown-item"><a class="dropdown-link" href="#">Новинки</a>
+                    </li>
+                    <li class="dropdown-item"><a class="dropdown-link" href="#">Сливочное</a>
+                    </li>
+                    <li class="dropdown-item"><a class="dropdown-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="dropdown-item"><a class="dropdown-link" href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="dropdown-item"><a class="dropdown-link" href="#">Мелорин</a>
+                    </li>
                 </ul>
             </li>
-            <li class="header-links"><a class="header-link" href="#">Доставка и оплата</a></li>
-            <li class="header-links"><a class="header-link" href="#">О компании</a></li>
+            <li class="header-menu_item">
+                <a class="header-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="header-menu_item">
+                <a class="header-link" href="#">О компании</a>
+            </li>
         </ul>
-        <ul class="header-navigation">
-            <li class="header-links">
+        <ul class="header-user_menu">
+            <li class="user-links">
                 <div class="drop-down">
                     <form class="find">
                         <input class="drop-find" type="input" placeholder="Крем-брюле">
-                        <img src="img/icon/loupe.svg" alt="Поиск по товарам магазина"></a>
+                        <img class="drop-img" src="img/icon/loupe.svg" alt="Поиск по товарам магазина"></a>
                     </form>
                 </div>
             </li>
@@ -93,8 +109,9 @@
         </div>
     </section>
 
-    <section class="advantages">
-        <p class="p-info" font-size="24px">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+    <section class="advantage-container">
+        <div class="advantage-fon">
+        <p class="advantage-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <ul class="advantages-list">
             <li>
                 <img src="img/icon/ice-cream.svg" class="advantages-info">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
@@ -109,6 +126,7 @@
                 <img src="img/icon/thermometer.svg" class="advantages-info">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
             </li>
         </ul>
+        </div>
     </section>
 
     <section class="news">
@@ -138,16 +156,16 @@
 
 <footer class="footer">
     <ul class="footer-social">
-        <li><a href="#" class="footer-links"><img src="img/icon/twitter.svg">Twitter</a></li>
-        <li><a href="#" class="footer-links"><img src="img/icon/instagram.svg">Инстаграм</a></li>
-        <li><a href="#" class="footer-links"><img src="img/icon/fb.svg">Фейсбук</a></li>
-        <li><a href="#" class="footer-links"><img src="img/icon/vk.svg">BK</a></li>
+        <li><a href="#" class="footer-social_tw"><img src="img/icon/twitter.svg"></a></li>
+        <li><a href="#" class="footer-social_inst"><img src="img/icon/instagram.svg"></a></li>
+        <li><a href="#" class="footer-social_fb"><img src="img/icon/fb.svg"></a></li>
+        <li><a href="#" class="footer-social_vk"><img src="img/icon/vk.svg"></a></li>
     </ul>
     <ul class="footer-menu">
-        <li><a href="#" class="footer-links"><img src="img/icon/heart.svg">Для поставщиков</a></li>
-        <li><a href="#" class="footer-links">О производстве</a></li>
-        <li><a href="#" class="footer-links">Наши документы</a></li>
-        <li><a href="#" class="footer-links">Экологические стандарты</a></li>
+        <li><a href="#" class="footer-link_heart"><img class="footer-img_heart" src="img/icon/heart.svg">Для поставщиков</a></li>
+        <li><a href="#" class="footer-links_info">О производстве</a></li>
+        <li><a href="#" class="footer-links_info">Наши документы</a></li>
+        <li><a href="#" class="footer-links_info">Экологические стандарты</a></li>
     </ul>
     <div class="footer-copy">
         <a href="https://htmlacademy.ru" class="footer-logo"><img src="img/icon/logo-htmlacademy.svg" width="100" height="50" alt="HTML ACADEMY"></a>
