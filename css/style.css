@@ -50,6 +50,7 @@ height: auto;
     width: 1146px;
     padding: 0 27px;
     margin: 0 auto;
+
 }
 
 .header-menu_item {
@@ -57,38 +58,45 @@ height: auto;
     color: white;
     font-weight: bold;
     font-size: 16px;
+    list-style: none;
 }
 .link-catalog {
     color: white;
     font-weight: bold;
     font-size: 16px;
     line-height: 18px;
+    list-style: none;
 }
 .drop-find {
     background-color: white;
     font-weight: 300;
     font-size: 14px;
     line-height: 24px;
+    list-style: none;
 }
 
 ul.dropdown {
     display: none;
+    list-style: none;
 }
 li.dropdown-item {
     color: black;
     background-color: #fbded8;
+    list-style: none;
 }
 .header-login {
     color: white;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    list-style: none;
 }
 .header-buy {
     color: white;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    list-style: none;
 }
 .small {
     color: white;
@@ -155,6 +163,7 @@ li.dropdown-item {
     color: #323232;
     font-weight: 300;
     line-height: 22px;
+    list-style: none;
 }
 .news {
     background-color: #ffffff;
@@ -210,10 +219,10 @@ button.form-submit {
     line-height: 24px;
     background-color: #e84e37;
 }
-.button:active {
+.features button:active {
     color: #e84e37;
 }
-.button:hover {
+.features button:hover {
     background-color: #e84e37;
 }
 .footer-img_heart,
@@ -235,9 +244,17 @@ footer-link_heart   {
     font-size: 12px;
     line-height: 18px;
 }
+.footer-social,
+.footer-menu {
+    list-style: none;
+}
 
-
-
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: #242424;
+}
 
 /*.footer-social_tw {*/
 /*    background-image: url(../img/icon/twitter.svg);*/
