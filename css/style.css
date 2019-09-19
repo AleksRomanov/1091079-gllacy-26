@@ -249,11 +249,13 @@ footer-link_heart   {
     list-style: none;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-    background-color: #242424;
+.header-navigation a:hover,
+.header-navigation a:focus,
+.header-link a:hover,
+.header-link a:focus,
+.log-auth a:hover,
+.log-auth a:focus {
+    background-color: #a1b6aa;
 }
 
 /*.footer-social_tw {*/
