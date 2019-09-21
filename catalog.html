@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" href="fonts/roboto-bold_700.woff2">
-    <link type="text/css" rel="stylesheet" href="fonts/roboto-medium_500.woff2">
-    <link type="text/css" rel="stylesheet" href="fonts/roboto-regular_300.woff2">
+    <link type="text/css" rel="stylesheet" href="fonts/Roboto-bold_700.woff2">
+    <link type="text/css" rel="stylesheet" href="fonts/Roboto-medium_500.woff2">
+    <link type="text/css" rel="stylesheet" href="fonts/Roboto-regular_300.woff2">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -18,22 +18,49 @@
     <nav class="container header_menu">
         <a class="header-logo"><img src="img/icon/logo.svg" width="100" height="50" alt="Логотип Глэйси!"></a>
         <ul class="header-navigation">
-            <li class="header-menu_item"><a class="link-catalog" href="catalog.html">Каталог</a></li>
-            <li><a href="#" class="header-links">Доставка и оплата</a></li>
-            <li><a href="#" class="header-links">О компании</a></li>
-        </ul>
-        <form class="header-submit_form">
-            <input class="header-input" type="email" required placeholder="email@example.com">
-            <input class="header-input" type="password" required>
-            <button class="header-input" type="submit">Войти</button>
-        </form>
-        </section>
-        <ul class="header-navigation">
-            <li class="header-find">
-                <a class="header-icon" href="#"><img src="img/icon/loupe.svg">Поиск по товарам магазина</img></a>
+            <li class="header-menu_item">
+                <a class="link-catalog" href="catalog.html">Каталог</a>
+                <ul class="dropdown">
+                    <li class="dropdown-item"><a class="dropdown-link" href="#">Новинки</a>
+                    </li>
+                    <li class="dropdown-item"><a class="dropdown-link" href="#">Сливочное</a>
+                    </li>
+                    <li class="dropdown-item"><a class="dropdown-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="dropdown-item"><a class="dropdown-link" href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="dropdown-item"><a class="dropdown-link" href="#">Мелорин</a>
+                    </li>
+                </ul>
             </li>
+            <li class="header-menu_item">
+                <a class="header-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="header-menu_item">
+                <a class="header-link" href="#">О компании</a>
+            </li>
+        </ul>
+        <ul class="header-user_menu">
+            <li class="user-links">
+                <img class="drop-img" src="img/icon/loupe.svg" alt="Поиск по товарам магазина"></a>
+                <form class="find dropdown">
+                    <input class="drop-find" type="input" placeholder="Крем-брюле">
+                </form>
+            </li>
+
             <li class="header-login">
-                <a class="header-icon" href="#"><img src="img/icon/entrance.svg">Вход</a>
+                <button class="button" type="button">
+                    <a class="button" href="#"><img src="img/icon/entrance.svg">Вход</a>
+                </button>
+                <form class="login-form dropdown" action="#" method="post">
+                    <input class="login" type="text" name="email" placeholder="email@example.com">
+                    <input class="password" type="text" name="password" placeholder="*********">
+                    <a class="button" href="#">Войти</a>
+                    <div class="login-links">
+                        <p class="link-forgot"><a href="#" class="login-forgot">Забыли пароль?</a></p>
+                        <p class="link-registration"><a href="#" class="registration">Новая регистрация</a></p>
+                    </div>
+                </form>
             </li>
             <li class="header-buy">
                 <a class="header-icon" href="#"><img src="img/icon/basket-red.svg">2 товара</a>
@@ -42,7 +69,7 @@
                         <tbody>
                         <tr class="buy-row">
                             <td class="row-item">
-                                <button class="row-button" type="button" aria-label="Удалить">X</button>
+                                <button class="button" type="button" aria-label="Удалить">X</button>
                             </td>
                             <td class="row-item">
                                 <img class="row-img" src="img/catalog/slivochnoe_small.png" width="35" height="35" alt="Пломбир с апельсиновым джемом">
@@ -53,7 +80,7 @@
                         </tr>
                         <tr class="buy-row">
                             <td class="row-item">
-                                <button class="row-button" type="button" aria-label="Удалить">X</button>
+                                <button class="button" type="button" aria-label="Удалить">X</button>
                             </td>
                             <td class="row-item">
                                 <img class="row-img" src="img/catalog/sliv-klub_small.png" width="35" height="35" alt="Клубничный пломбир с присыпкой  из белого шоколада">
@@ -71,22 +98,23 @@
                 </div>
             </li>
         </ul>
+        <div class="header-call">
+            <p class="small">С 10 до 20, ежедневно</p>
+            <a href="tel:+88124502525" class="call">8 812 450-25-25</a>
+        </div>
     </nav>
-    <div class="header-call">
-        <p class="small">С 10 до 20, ежедневно</p>
-        <a href="tel:+88124502525" class="call">8 812 450-25-25</a>
-    </div>
+
 </header>
 
 <main class="main">
 
-    <ul class="breadcrumbs">
-        <li class="breadcrumbs-list"><a href="index.html">Главная</a></li>
-        <li class="breadcrumbs-list"><a href="catalog.html">Каталог</a></li>
-        <li class="breadcrumbs-list"><a>Сливочное</a></li>
-    </ul>
-    <h1 class="inner-title">Сливочное мороженое</h1>
-    <section class="filters">
+    <section class="container filters">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs-list"><a href="index.html">Главная</a></li>
+            <li class="breadcrumbs-list"><a href="catalog.html">Каталог</a></li>
+            <li class="breadcrumbs-list"><a>Сливочное</a></li>
+        </ul>
+        <h1 class="inner-title">Сливочное мороженое</h1>
         <form class="filter-form" action="#" method="post">
             <div class="sort-view">
                 <label for="sort">Сортировка:</label>
@@ -105,7 +133,7 @@
             <button type="submit">Применить</button>
         </form>
     </section>
-    <section class="catalog">
+    <section class="container catalog">
         <ul class="catalog-list">
             <li class="catalog-item">
                 <a href="#" class="catalog-item-img"><img src="img/catalog/slivochnoe.png" width="50" height="50" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a><span class="catalog-item-price">310 ₽/кг</span>
@@ -153,26 +181,35 @@
                 <a href="#" class="catalog-item-name">Сливочное с мятным сиропом</a>
             </li>
         </ul>
+        <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ul>
     </section>
 
 </main>
 
 <footer class="footer">
-    <ul class="footer-social">
-        <li><a href="#" class="footer-links"><img src="img/icon/twitter.svg">Twitter</a></li>
-        <li><a href="#" class="footer-links"><img src="img/icon/instagram.svg">Инстаграм</a></li>
-        <li><a href="#" class="footer-links"><img src="img/icon/fb.svg">Фейсбук</a></li>
-        <li><a href="#" class="footer-links"><img src="img/icon/vk.svg">BK</a></li>
-    </ul>
-    <ul class="footer-menu">
-        <li><a href="#" class="footer-links"><img src="img/icon/heart.svg">Для поставщиков</a></li>
-        <li><a href="#" class="footer-links">О производстве</a></li>
-        <li><a href="#" class="footer-links">Наши документы</a></li>
-        <li><a href="#" class="footer-links">Экологические стандарты</a></li>
-    </ul>
-    <div class="footer-copy">
-        <a href="https://htmlacademy.ru" class="footer-logo"><img src="img/icon/logo-htmlacademy.svg" width="100" height="50" alt="HTML ACADEMY"></a>
-        <small class="developer-link">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019</small>
+    <div class="container">
+        <ul class="footer-social">
+            <li><a href="#" class="footer-social_tw"><img src="img/icon/twitter.svg"></a></li>
+            <li><a href="#" class="footer-social_inst"><img src="img/icon/instagram.svg"></a></li>
+            <li><a href="#" class="footer-social_fb"><img src="img/icon/fb.svg"></a></li>
+            <li><a href="#" class="footer-social_vk"><img src="img/icon/vk.svg"></a></li>
+        </ul>
+        <ul class="footer-menu">
+            <li><a href="#" class="footer-link_delivery"><img class="footer-img_heart" src="img/icon/heart.svg">Для поставщиков</a></li>
+            <li><a href="#" class="footer-links_info">О производстве</a></li>
+            <li><a href="#" class="footer-links_info">Наши документы</a></li>
+            <li><a href="#" class="footer-links_info">Экологические стандарты</a></li>
+        </ul>
+        <div class="footer-copy">
+            <a href="https://htmlacademy.ru" class="footer-logo"><img src="img/icon/logo-htmlacademy.svg" width="100" height="50" alt="HTML ACADEMY"></a>
+            <small class="developer-link">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019</small>
+        </div>
     </div>
 </footer>
 

@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" href="fonts/roboto-bold_700.woff2">
-    <link type="text/css" rel="stylesheet" href="fonts/roboto-medium_500.woff2">
-    <link type="text/css" rel="stylesheet" href="fonts/roboto-regular_300.woff2">
+    <link type="text/css" rel="stylesheet" href="fonts/Roboto-bold_700.woff2">
+    <link type="text/css" rel="stylesheet" href="fonts/Roboto-medium_500.woff2">
+    <link type="text/css" rel="stylesheet" href="fonts/Roboto-regular_300.woff2">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,7 +20,7 @@
         <ul class="header-navigation">
             <li class="header-menu_item">
                 <a class="link-catalog" href="catalog.html">Каталог</a>
-                <ul class="dropdown" hidden>
+                <ul class="dropdown">
                     <li class="dropdown-item"><a class="dropdown-link" href="#">Новинки</a>
                     </li>
                     <li class="dropdown-item"><a class="dropdown-link" href="#">Сливочное</a>
@@ -42,74 +42,75 @@
         </ul>
         <ul class="header-user_menu">
             <li class="user-links">
-                <div class="drop-down">
-                    <form class="find">
-                        <input class="drop-find" type="input" placeholder="Крем-брюле">
-                        <img class="drop-img" src="img/icon/loupe.svg" alt="Поиск по товарам магазина"></a>
-                    </form>
-                </div>
+                <img class="drop-img" src="img/icon/loupe.svg" alt="Поиск по товарам магазина"></a>
+                <form class="find dropdown">
+                    <input class="drop-find" type="input" placeholder="Крем-брюле">
+                </form>
             </li>
+
             <li class="header-login">
-                <div class="drop-down">
-                    <form class="login-form" action="#" method="post">
-                        <input class="login" type="text" name="email" placeholder="email@example.com">
-                        <input class="password" type="text" name="password" placeholder="*********">
-                        <button class="button-login" type="button"><a class="log-auth" href="#"><img src="img/icon/entrance.svg">Вход</a></button>
-                        <span class="login-links">
-                            <p class="link-forgot"><a href="#" class="login-forgot">Забыли пароль?</a></p>
-                            <p class="link-registration"><a href="#" class="registration">Новая регистрация</a></p>
-                        </span>
-                    </form>
-                </div>
+                <button class="button" type="button">
+                    <a class="button" href="#"><img src="img/icon/entrance.svg">Вход</a>
+                </button>
+                <form class="login-form dropdown" action="#" method="post">
+                    <input class="login" type="text" name="email" placeholder="email@example.com">
+                    <input class="password" type="text" name="password" placeholder="*********">
+                    <a class="button" href="#">Войти</a>
+                    <div class="login-links">
+                        <p class="link-forgot"><a href="#" class="login-forgot">Забыли пароль?</a></p>
+                        <p class="link-registration"><a href="#" class="registration">Новая регистрация</a></p>
+                    </div>
+                </form>
             </li>
             <li class="header-buy">
                 <a href="#"><img src="img/icon/basket.svg">Пусто</a>
             </li>
         </ul>
+        <div class="header-call">
+            <p class="small">С 10 до 20, ежедневно</p>
+            <a href="tel:+88124502525" class="call">8 812 450-25-25</a>
+        </div>
     </nav>
-    <div class="header-call">
-        <p class="small">С 10 до 20, ежедневно</p>
-        <a href="tel:+88124502525" class="call">8 812 450-25-25</a>
-    </div>
+
 </header>
 
 <main class="main">
-    <section class="main-promo">
+    <section class="container main-promo">
         <ul class="promo-list">
             <li class="promo-item">
                 <div class="item-fon_one"></div>
                 <img class="promo-img" src="img/background/Slide-1.png" alt="Крем-брюле и пломбир с малиновым джемом">
                 <h2 class="promo-name">Крем-брюле и пломбир с малиновым джемом</h2>
-                <button class="promo-button" type="button"><a href="#">Давайте оба!</a></button>
+                <button class="button" type="button"><a href="#">Давайте оба!</a></button>
             </li>
             <li class="promo-item">
                 <div class="item-fon_two"></div>
                 <img class="promo-img" src="img/background/Slide-2.png" alt="Шоколадный пломбир и лимонный сорбет">
                 <h2 class="promo-name">Шоколадный пломбир и лимонный сорбет</h2>
-                <button class="promo-button" type="button"><a href="#">Давайте оба!</a></button>
+                <button class="button" type="button"><a href="#">Давайте оба!</a></button>
             </li>
             <li class="promo-item">
                 <div class="item-fon_three"></div>
                 <img class="promo-img" src="img/background/Slide-3.png" alt="Пломбир с помадкой и клубничный щербет">
                 <h2 class="promo-name">Пломбир с помадкой и клубничный щербет</h2>
-                <button class="promo-button" type="button"><a href="#">Давайте оба!</a></button>
+                <button class="button" type="button"><a href="#">Давайте оба!</a></button>
             </li>
         </ul>
     </section>
-    <section class="main-features">
-        <div class="features">
+    <section class="container main-features">
+        <div class="features-first">
             <p class="features-item">Малинка даром!</p>
-            <p class="features-item">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <button class="features-first" type="button"><a href="#">Хочу варенье!</a></button>
+            <p class="features-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a class="button" href="#">Хочу варенье!</a>
         </div>
-        <div class="features">
+        <div class="features-second">
             <p class="features-item">Шоколадки даром!</p>
-            <p class="features-item">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <button class="features-second" type="button"><a href="#">Хочу шоколадки!</a></button>
+            <p class="features-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <a class="button" href="#">Хочу шоколадки!</a>
         </div>
     </section>
 
-    <section class="advantage-container">
+    <section class="container advantage-container">
         <div class="advantage-fon">
             <p class="advantage-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
             <ul class="advantages-list">
@@ -129,60 +130,67 @@
         </div>
     </section>
 
-    <section class="news">
-        <p class="news-title">Новое в нашем блоге</p>
-        <a href="#" class="news-link">10 способов сервировки фруктовых щербетов к столу</a>
+    <section class="container news-container">
+        <div class="news-block">
+            <p class="news-title">Новое в нашем блоге</p>
+            <a href="#" class="news-link">10 способов сервировки фруктовых щербетов к столу</a>
+        </div>
+        <div class="send-block">
+            <p class="send-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="send-form" action="#" method="post">
+                <input class="form-email" type="text" name="email" placeholder="Электронная почта" aria-label="Электронная почта">
+                <button class="button" type="submit">Отправить</button>
+            </form>
+        </div>
     </section>
 
-    <section class="send">
-        <p class="send-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form class="send-form" action="#" method="post">
-            <input class="form-email" type="text" name="email" placeholder="Электронная почта" aria-label="Электронная почта">
-            <button class="form-submit" type="submit">Отправить</button>
-        </form>
-    </section>
+
     <section class="map">
-        <div class="map-block">
-            <p class="map-first">Адрес главного офиса и офлайн-магазина:</p>
-            <p class="map-second">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-            <p class="map-first">Для заказов по телефону:</p>
-            <p class="map-second">8 812 450-25-25</p>
-            <p class="map-first">(с 10 до 20 ежедневно)</p>
-            <button class="form-submit" type="submit"><a href="#">Форма обратной связи</a></button>
+        <div class="container">
+            <div class="map-block">
+                <p class="address-titles">Адрес главного офиса и офлайн-магазина:</p>
+                <p class="map-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+                <p class="address-titles">Для заказов по телефону:</p>
+                <p class="map-phone">8 812 450-25-25</p>
+                <p class="address-titles">(с 10 до 20 ежедневно)</p>
+                <button class="button" type="submit"><a href="#">Форма обратной связи</a></button>
+            </div>
         </div>
     </section>
 
 </main>
 
 <footer class="footer">
-    <ul class="footer-social">
-        <li><a href="#" class="footer-social_tw"><img src="img/icon/twitter.svg"></a></li>
-        <li><a href="#" class="footer-social_inst"><img src="img/icon/instagram.svg"></a></li>
-        <li><a href="#" class="footer-social_fb"><img src="img/icon/fb.svg"></a></li>
-        <li><a href="#" class="footer-social_vk"><img src="img/icon/vk.svg"></a></li>
-    </ul>
-    <ul class="footer-menu">
-        <li><a href="#" class="footer-link_heart"><img class="footer-img_heart" src="img/icon/heart.svg">Для поставщиков</a></li>
-        <li><a href="#" class="footer-links_info">О производстве</a></li>
-        <li><a href="#" class="footer-links_info">Наши документы</a></li>
-        <li><a href="#" class="footer-links_info">Экологические стандарты</a></li>
-    </ul>
-    <div class="footer-copy">
-        <a href="https://htmlacademy.ru" class="footer-logo"><img src="img/icon/logo-htmlacademy.svg" width="100" height="50" alt="HTML ACADEMY"></a>
-        <small class="developer-link">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019</small>
+    <div class="container">
+        <ul class="footer-social">
+            <li><a href="#" class="footer-social_tw"><img src="img/icon/twitter.svg"></a></li>
+            <li><a href="#" class="footer-social_inst"><img src="img/icon/instagram.svg"></a></li>
+            <li><a href="#" class="footer-social_fb"><img src="img/icon/fb.svg"></a></li>
+            <li><a href="#" class="footer-social_vk"><img src="img/icon/vk.svg"></a></li>
+        </ul>
+        <ul class="footer-menu">
+            <li><a href="#" class="footer-link_delivery"><img class="footer-img_heart" src="img/icon/heart.svg">Для поставщиков</a></li>
+            <li><a href="#" class="footer-links_info">О производстве</a></li>
+            <li><a href="#" class="footer-links_info">Наши документы</a></li>
+            <li><a href="#" class="footer-links_info">Экологические стандарты</a></li>
+        </ul>
+        <div class="footer-copy">
+            <a href="https://htmlacademy.ru" class="footer-logo"><img src="img/icon/logo-htmlacademy.svg" width="100" height="50" alt="HTML ACADEMY"></a>
+            <small class="developer-link">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019</small>
+        </div>
     </div>
 </footer>
 
 <section class="popup">
     <p class="popup-first">Мы обязательно вам ответим!</p>
-    <button class="popup-button" type="button" aria-label="Закрыть">X</button>
+    <button class="button" type="button" aria-label="Закрыть">X</button>
     <form class="popup-form" action="#" method="post">
-        <p class="popup-second"><input class="popup-name" type="text" required placeholder="Имя Фамилия"></p>
-        <p class="popup-second"><input class="popup-email" type="email" required placeholder="email@example.com"></p>
+        <p class="popup-second"><input class="name" type="text" required placeholder="Имя Фамилия"></p>
+        <p class="popup-second"><input class="email" type="email" required placeholder="email@example.com"></p>
         <label class="text-input">
             <textarea name="text" class="text-input" placeholder="В свободной форме"></textarea>
         </label>
-        <button class="popup-submit" type="submit">Отправить</button>
+        <button class="button" type="submit">Отправить</button>
     </form>
 </section>
 
