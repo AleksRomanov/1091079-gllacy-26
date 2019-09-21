@@ -315,6 +315,21 @@ img {
     font-weight: 500;
     list-style: none;
 }
+.essentials-list {
+    list-style: none;
+}
+.essentials-item-price {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+
+}
+.essentials-item-name {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+    list-style: none;
+}
 
 /*.footer-social_tw {*/
 /*    background-image: url(../img/icon/twitter.svg);*/
