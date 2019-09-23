@@ -76,22 +76,37 @@ img {
 }
 
 .button {
-    background-color: #849d8f;
+    background-color: #e84e37;
     border-radius: 10px;
+
+}
+
+.button-promo {
+    background-color: #e84e37;
+    align-self: flex-end;
+    text-decoration: none;
+    margin-right: 19px;
+    left: 401px;
+    top: 807px;
+    width: 165px;
+    height: 46px;
+    border-radius: 10px;
+
 }
 
 a.button {
+    background-color: #e84e37;
     left: 971px;
     top: 23px;
     width: 93px;
     height: 32px;
-    z-index: 188;
+    border-radius: 10px;
 }
 
 .button:hover,
 .button:focus,
 .button:active {
-    background-color: #e84e37;
+    background-color: #849d8f;
 }
 
 .header {
@@ -150,6 +165,8 @@ a.button {
 .header-user_menu {
     display: flex;
     align-items: center;
+    list-style: none;
+
 }
 
 .header-login {
@@ -206,8 +223,16 @@ a.button {
     line-height: 16px;
 }
 
+.catalog {
+
+}
+
 .catalog-list {
-    list-style: none;
+
+}
+
+.catalog-item {
+
 }
 
 .drop-find {
@@ -230,7 +255,7 @@ a.button {
     position: relative;
 }
 
-.main-promo {
+.promo-img {
 
 }
 
@@ -261,7 +286,6 @@ a.button {
 
 .features-first {
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
     width: 560px;
     height: 229px;
@@ -285,7 +309,6 @@ a.button {
 
 .features-second {
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
     width: 560px;
     height: 229px;
