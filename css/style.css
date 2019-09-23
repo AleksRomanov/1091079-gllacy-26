@@ -36,8 +36,12 @@ html {
     box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*, *::before, *::after {
     box-sizing: inherit;
+}
+
+.content-box-component {
+    box-sizing: content-box;
 }
 
 body {
@@ -257,12 +261,12 @@ a.button {
 
 .features-first {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
-    align-items: flex-start;
     width: 560px;
     height: 229px;
     background-repeat: no-repeat;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .features-item {
@@ -274,8 +278,6 @@ a.button {
 }
 
 .features-description {
-    margin-top: -20px;
-    margin-left: 19px;
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
@@ -283,12 +285,12 @@ a.button {
 
 .features-second {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
-    align-items: flex-start;
     width: 560px;
     height: 229px;
     background-repeat: no-repeat;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .advantage-container {
