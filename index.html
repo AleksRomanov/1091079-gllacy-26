@@ -13,7 +13,7 @@
 
 <header class="container header">
     <nav class="header_menu">
-        <a class="header-logo"><img class="logo-img" src="img/icon/logo.svg" width="154" height="64" alt="Логотип Глэйси!"></a>
+        <a class="header-logo"><img src="img/icon/logo.svg" width="154" height="64" alt="Логотип Глэйси!"></a>
         <ul class="header-navigation">
             <li class="header-menu_item">
                 <a class="link-catalog" href="catalog.html">Каталог</a>
@@ -98,19 +98,15 @@
     </section>
     <section class="container main-features">
         <ul class="features-list">
-            <li class="features">
-                <a class="feature-raspberrу">
-                    <h3 class="features-item">Малинка даром!</h3>
-                    <p class="features-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                    <p class="button-features" href="#">Хочу варенье!</p>
-                </a>
+            <li class="features-blog">
+                <h3 class="features-item">Малинка даром!</h3>
+                <p class="features-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                <button class="button-features" href="#">Хочу варенье!</button>
             </li>
-            <li class="features">
-                <a class="feature-chocolate">
-                    <h3 class="features-item">Шоколадки даром!</h3>
-                    <p class="features-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-                    <p class="button-features" href="#">Хочу шоколадки!</p>
-                </a>
+            <li class="features-blog_second">
+                <h3 class="features-item">Шоколадки даром!</h3>
+                <p class="features-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                <button class="button-features" href="#">Хочу шоколадки!</button>
             </li>
         </ul>
     </section>
@@ -144,19 +140,15 @@
             <ul class="advantages-list">
                 <li class="advantage-item">
                     <p class="advantage-info">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-                    <!--                    <img src="img/icon/ice-cream.svg" class="advantages-info">-->
                 </li>
                 <li class="advantage-item">
-
-                    <img src="img/icon/cow.svg" class="advantages-info">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+                    <p class="advantage-info-first">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
                 </li>
                 <li class="advantage-item">
-
-                    <img src="img/icon/eco.svg" class="advantages-info">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+                    <p class="advantage-info-second">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
                 </li>
                 <li class="advantage-item">
-
-                    <img src="img/icon/thermometer.svg" class="advantages-info">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+                    <p class="advantage-info-third">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
                 </li>
             </ul>
         </div>
@@ -168,11 +160,13 @@
             <a href="#" class="news-link">10 способов сервировки фруктовых щербетов к столу</a>
         </div>
         <div class="send-block">
-            <p class="send-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="send-form" action="#" method="post">
-                <input class="form-email" type="text" name="email" placeholder="Электронная почта" aria-label="Электронная почта">
-                <button class="button" type="submit">Отправить</button>
-            </form>
+            <div class="send-background">
+                <p class="send-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                <form class="send-form" action="#" method="post">
+                    <input class="form-email" type="text" name="email" placeholder="Электронная почта" aria-label="Электронная почта">
+                    <button class="button button-send" type="submit">Отправить</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -185,7 +179,7 @@
                 <p class="address-titles">Для заказов по телефону:</p>
                 <p class="map-phone">8 812 450-25-25</p>
                 <p class="address-titles">(с 10 до 20 ежедневно)</p>
-                <button class="button" type="submit"><a href="#">Форма обратной связи</a></button>
+                <button class="button button_map" type="submit"><a href="#">Форма обратной связи</a></button>
             </div>
         </div>
     </section>
