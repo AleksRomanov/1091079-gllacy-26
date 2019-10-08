@@ -347,13 +347,13 @@ img {
 }
 
 .header-call {
-    position: relative;
-    top: -10px;
+    position: absolute;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
     text-align: right;
     margin: 0;
+    min-width: 1410px;
 }
 
 .call-number {
@@ -656,6 +656,10 @@ img {
 
 .twitter {
     background-image: url("../img/icon/twitter.svg");
+    opacity: 80%;
+}
+.twitter:hover{
+
 }
 
 .instagram {
@@ -874,18 +878,16 @@ img {
 }
 
 .site-wrapper::before {
-    background-image: url("img/slider-item2.png");
+    background-image: url("../img/background/Slide-2.png");
 }
 
 .site-wrapper::after {
-    background-image: url("img/slider-item3.png");
+    background-image: url("../img/background/Slide-3.png");
 }
 
 .slider {
     position: relative;
-
     padding-top: 321px;
-
     text-align: center;
     color: #ffffff;
 }
