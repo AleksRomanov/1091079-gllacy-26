@@ -315,15 +315,17 @@ img {
     fill: #323232;
     color: #323232;
 }
+.login-enter {
 
+}
 .svg-login {
     position: relative;
-    top: 2px;
+    top: 4px;
 }
 
 .svg-buy {
     position: relative;
-    top: 4px;
+    top: 2px;
 }
 
 .basket-button {
