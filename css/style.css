@@ -606,9 +606,11 @@ img {
 
 .map {
     background-image: url(../img/background/map.png);
+
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 40px;
+
 }
 
 .button_map {
@@ -813,6 +815,8 @@ img {
     font-weight: 500;
     text-decoration: underline;
     text-decoration-color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    top: -20px
 }
 
 .catalog-item-price {
@@ -820,7 +824,7 @@ img {
     line-height: 45px;
     font-weight: 700;
     text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
-    margin-top: -60px;
+    margin-top: -65px;
 }
 
 .catalog-item-wt {
@@ -833,16 +837,19 @@ img {
 .catalog-item:hover {
     background-color: rgba(248, 247, 244, 0.2);
     border-radius: 5px;
+    z-index: 700;
 }
 
 .catalog-item:hover > .fast-view {
     opacity: 1;
     background-color: #e84e37;
     text-decoration: none;
+    position: relative;
+    bottom: 20px;
 }
 
 .img-item {
-    margin-top: 10px;
+    margin-top: 6px;
 }
 
 .fast-view {
@@ -857,14 +864,16 @@ img {
     color: white;
     text-align: center;
     padding: 10px;
-    position: relative;
     left: 46px;
     bottom: 5px;
     border-radius: 20px;
 }
+.catalog-item .fast-view:hover {
+    background-color: #f07a63;
+}
 
 .breadcrumbs {
-    list-style: none;
+    display: contents;
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
@@ -891,7 +900,7 @@ img {
     min-width: 940px;
 
     background-color: #849d8f;
-    background-image: url("../img/background/Slide-1.png");
+    background-image: url("../img/background/Slide-1.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -926,7 +935,7 @@ img {
 }
 
 .slide-button {
-    margin-bottom: 300px;
+    margin-bottom: 150px;
 }
 
 .slide {
@@ -937,21 +946,22 @@ img {
     width: 700px;
     margin: 0 auto;
     margin-bottom: 27px;
-
+    position: relative;
+    top: 60px;
     font-size: 60px;
     line-height: 60px;
     font-weight: 800;
 }
 
 .slide-button {
-    display: inline-block;
+    position: relative;
+    top: 60px;
     padding: 12px 44px;
     font-weight: 600;
     font-size: 31px;
     line-height: 41px;
     text-align: center;
     color: #ffffff;
-    vertical-align: top;
     text-decoration: none;
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
     background: #f26843;
@@ -976,10 +986,9 @@ img {
 
 .slider-controls {
     position: absolute;
-    bottom: 63px;
+    bottom: 110px;
     left: 0;
     z-index: 20;
-
     font-size: 0;
 }
 
@@ -999,7 +1008,7 @@ img {
 
 #product-1:checked ~ .site-wrapper {
     background-color: #849d8f;
-    background-image: url("../img/background/Slide-1.png");
+    background-image: url("../img/background/Slide-1.jpg");
 }
 
 #product-2:checked ~ .site-wrapper {
