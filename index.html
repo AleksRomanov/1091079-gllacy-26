@@ -39,14 +39,14 @@
         </ul>
         <ul class="header-user_menu">
             <li class="user-links">
-                <button class="button button_drop-img">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="#fff">
+                <a class="button button_drop-img">
+                    <svg class="svg-find" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="#fff">
                         <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
                     </svg>
-                </button>
-                <form class="find dropdown">
-                    <input class="drop-find" type="input" placeholder="Крем-брюле">
-                </form>
+                    <form class="find dropdown">
+                        <input class="drop-find" type="search" placeholder="Крем-брюле">
+                    </form>
+                </a>
             </li>
             <li class="header-login">
                 <a class="button button-login" href="">
@@ -57,13 +57,19 @@
                     <span class="login-enter">Вход</span>
                 </a>
                 <form class="login-form dropdown" action="#" method="post">
-                    <input class="login" type="text" name="email" placeholder="email@example.com">
-                    <input class="password" type="text" name="password" placeholder="*********">
-                    <a class="button" href="#">Войти</a>
-                    <div class="login-links">
-                        <p class="link-forgot"><a href="#" class="login-forgot">Забыли пароль?</a></p>
-                        <p class="link-registration"><a href="#" class="registration">Новая регистрация</a></p>
-                    </div>
+                    <p>
+                        <label class="visually-hidden" for="user-login">e-mail</label>
+                        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="email@example.com">
+                    </p>
+                    <p>
+                        <label class="visually-hidden" for="user-password">Пароль</label>
+                        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="*********">
+                    </p>
+                    <button class="button-enter" href="#">Войти</button>
+                    <p class="login-help">
+                        <a class="restore" href="#">Забыли пароль?</a>
+                        <a class="registration" href="#">Новая регистрация</a>
+                    </p>
                 </form>
             </li>
             <li class="header-buy">
@@ -234,14 +240,14 @@
 
 
     <section class="map">
-        <div class="container">
+        <div class="container map-container">
             <div class="map-block">
                 <p class="address-titles">Адрес главного офиса и офлайн-магазина:</p>
                 <p class="map-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
                 <p class="address-titles">Для заказов по телефону:</p>
                 <p class="map-phone">8 812 450-25-25</p>
                 <p class="address-titles">(с 10 до 20 ежедневно)</p>
-                <button class="button button_map" type="submit"><a href="#">Форма обратной связи</a></button>
+                <button class="button button_map" type="submit">Форма обратной связи</button>
             </div>
         </div>
     </section>
@@ -258,24 +264,24 @@
         </ul>
         <ul class="navigation-list">
             <li class="navigation-item navigation-delivery"><a class="delivery-link" href="#">Для поставщиков</a></li>
-            <li class="navigation-item"><a href="#">Наши документы</a></li>
-            <li class="navigation-item"><a href="#">О производстве</a></li>
-            <li class="navigation-item"><a href="#">Экологические стандарты</a></li>
+            <li class="navigation-item"><a class="delivery-link" href="#">Наши документы</a></li>
+            <li class="navigation-item"><a class="delivery-link" href="#">О производстве</a></li>
+            <li class="navigation-item"><a class="delivery-link" href="#">Экологические стандарты</a></li>
         </ul>
         <div class="footer-copy">
             <a href="https://htmlacademy.ru" class="footer-logo">
                 <img src="img/icon/logo-htmlacademy.svg" width="100" height="50" alt="HTML ACADEMY"></a>
-            <span class="developer-link">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019</span>
+            <span class="developer-link">Сделано в <a class="delivery-link" href="https://htmlacademy.ru">HTML Academy</a> © 2019</span>
         </div>
     </nav>
 </footer>
 
-<section class="popup" hidden>
-    <p class="popup-first">Мы обязательно вам ответим!</p>
+<section class="dropdown popup-login">
+    <p class="popup-title">Мы обязательно вам ответим!</p>
     <button class="button" type="button" aria-label="Закрыть">X</button>
     <form class="popup-form" action="#" method="post">
-        <p class="popup-second"><input class="name" type="text" required placeholder="Имя Фамилия"></p>
-        <p class="popup-second"><input class="email" type="email" required placeholder="email@example.com"></p>
+        <p class="popup-name"><input class="name" type="text" required placeholder="Имя Фамилия"></p>
+        <p class="popup-mail"><input class="email" type="email" required placeholder="email@example.com"></p>
         <label class="text-input">
             <textarea name="text" class="text-input" placeholder="В свободной форме"></textarea>
         </label>
