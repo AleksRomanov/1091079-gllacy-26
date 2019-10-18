@@ -27,14 +27,19 @@
         </ul>
         <ul class="header-user_menu">
             <li class="user-links">
-                <button class="button button_drop-img">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="#fff">
+                <a class="button button_drop-img">
+                    <svg class="svg-find" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="#fff">
                         <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
                     </svg>
-                </button>
+                </a>
+                <form class="find dropdown">
+                    <p class="form-drop">
+                        <input class="drop-find" type="search" placeholder="Крем-брюле">
+                    </p>
+                </form>
             </li>
             <li class="header-login">
-                <a class="button button-login" href="">
+                <a class="button button-login" href="#">
                     <svg class="svg-login" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="#f8f7f4">
                         <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
                         <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
@@ -42,13 +47,21 @@
                     <span class="login-enter">Вход</span>
                 </a>
                 <form class="login-form dropdown" action="#" method="post">
-                    <input class="login" type="text" name="email" placeholder="email@example.com">
-                    <input class="password" type="text" name="password" placeholder="*********">
-                    <a class="button" href="#">Войти</a>
-                    <div class="login-links">
-                        <p class="link-forgot"><a href="#" class="login-forgot">Забыли пароль?</a></p>
-                        <p class="link-registration"><a href="#" class="registration">Новая регистрация</a></p>
-                    </div>
+                    <fieldset class="login">
+                        <p class="login-drop">
+                            <label class="visually-hidden" for="user-login">e-mail</label>
+                            <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="email@example.com">
+                        </p>
+                        <p class="login-drop">
+                            <label class="visually-hidden" for="user-password">Пароль</label>
+                            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="*********">
+                        </p>
+                        <button class="button-enter" href="#">Войти</button>
+                        <p class="login-help">
+                            <a class="restore" href="#">Забыли пароль?</a>
+                            <a class="registration" href="#">Новая регистрация</a>
+                        </p>
+                    </fieldset>
                 </form>
             </li>
             <li class="header-buy">
@@ -56,38 +69,39 @@
                     <img class="basket-img" src="img/icon/basket-red.svg">
                     <span class="basket-status">2 товара</span>
                 </a>
-                <div class="dropdown">
+
+                <fieldset class="dropdown buy-drop">
                     <table class="buy-table" border="2">
                         <tbody>
                         <tr class="buy-row">
                             <td class="row-item">
-                                <button class="button" type="button" aria-label="Удалить">X</button>
+                                <p class="item-close"></p>
                             </td>
                             <td class="row-item">
                                 <img class="row-img" src="img/catalog/slivochnoe_small.png" width="35" height="35" alt="Пломбир с апельсиновым джемом">
                             </td>
-                            <td class="row-item">Пломбир с апельсиновым джемом</td>
+                            <td class="row-item title">Пломбир с апельсиновым джемом</td>
                             <td class="row-item">1,5 кг х 200 руб.</td>
                             <td class="row-item">300 руб.</td>
                         </tr>
                         <tr class="buy-row">
                             <td class="row-item">
-                                <button class="button" type="button" aria-label="Удалить">X</button>
+                                <p class="item-close"></p>
                             </td>
                             <td class="row-item">
                                 <img class="row-img" src="img/catalog/sliv-klub_small.png" width="35" height="35" alt="Клубничный пломбир с присыпкой  из белого шоколада">
                             </td>
-                            <td class="row-item">Клубничный пломбир с присыпкой из белого шоколада</td>
+                            <td class="row-item title">Клубничный пломбир с присыпкой из белого шоколада</td>
                             <td class="row-item">1,5 кг х 300 руб.</td>
                             <td class="row-item">450 руб.</td>
                         </tr>
                         <tr class="buy-row">
-                            <td class="row-item" colspan="5">Итого: 750 руб</td>
+                            <td class="row-item final-price" colspan="5">Итого: 750 руб</td>
                         </tr>
                         </tbody>
                     </table>
                     <button class="buy-button" type="button" aria-label="Оформить заказ">Оформить заказ</button>
-                </div>
+                </fieldset>
             </li>
         </ul>
     </nav>
@@ -99,30 +113,94 @@
 
 <main class="main">
 
+    <ul class="container breadcrumbs">
+        <li class="breadcrumbs-list"><a href="index.html">Главная</a> »</li>
+        <li class="breadcrumbs-list"><a href="#">Каталог</a> »</li>
+        <li class="breadcrumbs-list"><a>Сливочное</a></li>
+    </ul>
     <section class="container filters">
-        <ul class="breadcrumbs">
-            <li class="breadcrumbs-list"><a href="index.html">Главная</a> »</li>
-            <li class="breadcrumbs-list"><a href="catalog.html">Каталог</a> »</li>
-            <li class="breadcrumbs-list"><a>Сливочное</a></li>
-        </ul>
         <h1 class="inner-title">Сливочное мороженое</h1>
-        <form class="filter-form" action="#" method="post">
-            <div class="sort-view">
-                <label for="sort">Сортировка:</label>
-                <select name="sort" id="sort">
-                    <option>по популярности</option>
-                    <option>сначала не дорогие</option>
-                    <option>сначала дорогие</option>
-                    <option>по жирности</option>
-                </select>
-            </div>
-            <div class="sort-price">
-                <label>"Цена:
-                    <input type="range" name="price" min="1" max="1000" step="1">
-                </label>
-            </div>
-            <button type="submit">Применить</button>
+        <h2 class="visually-hidden">Фильтр</h2>
+        <form class="filters-form" action="" method="get">
+            <fieldset class="fieldset-filters">
+                <div class="filter-option filter-sort">
+                    <label for="sort">Сортировка:</label>
+                    <select id="sort" class="sort" name="sort">
+                        <option value="populary" selected>по популярности</option>
+                        <option value="inexpensive">сначала недорогие</option>
+                        <option value="expensive">сначала дорогие</option>
+                        <option value="flat">по жирности</option>
+                    </select>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5">
+                        <path fill="#FFF" d="M4.5 5L0 0h9z"/>
+                    </svg>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset-filters">
+                <div class="filter-option filter-price">
+                    <p>
+                        Цена:
+                        <label for="price-for">
+                            <span class="visually-hidden">Цена от</span>
+                            <input id="price-for" name="price-for" type="number" value="100">
+                            руб. -
+                        </label>
+                        <label for="price-to">
+                            <span class="visually-hidden">Цена до</span>
+                            <input id="price-to" name="price-to" type="number" value="500">
+                            руб.
+                        </label>
+                    </p>
+                    <div class="slider-range">
+                        <div class="slider-runner"></div>
+                        <button type="button-slider" name="price-from"><span class="visually-hidden">Цена от</span></button>
+                        <button type="button-slider" name="price-to"><span class="visually-hidden">Цена до</span></button>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset-filters">
+                <div class="filter-option filter-fat">
+                    <p>Жирность:</p>
+                    <span>
+            <input id="r-1" class="filter-input-radio" type="radio" name="fat" value="0">
+            <label for="r-1" class="label-radio">0%</label>
+
+            <input id="r-2" class="filter-input-radio" type="radio" name="fat" value="less-10" checked>
+            <label for="r-2">до 10%</label>
+
+            <input id="r-3" class="filter-input-radio" type="radio" name="fat" value="less-30">
+            <label for="r-3">до 30%</label>
+
+            <input id="r-4" class="filter-input-radio" type="radio" name="fat" value="more 30">
+            <label for="r-4">выше 30%</label>
+          </span>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset-filters">
+                <div class="filter-option filter-topping">
+                    <p>Наполнители:</p>
+                    <span>
+            <input id="ch-1" class="filter-input-checkbox" type="checkbox" name="choco" value="choco" checked>
+            <label for="ch-1">шоколадные</label>
+
+            <input id="ch-2" class="filter-input-checkbox" type="checkbox" name="sugar" value="sugar" checked>
+            <label for="ch-2">сахарные присыпки</label>
+
+            <input id="ch-3" class="filter-input-checkbox" type="checkbox" name="fruits" value="fruits">
+            <label for="ch-3">фрукты</label>
+
+            <input id="ch-4" class="filter-input-checkbox" type="checkbox" name="syrop" value="syrop">
+            <label for="ch-4">сиропы</label>
+
+            <input id="ch-5" class="filter-input-checkbox" type="checkbox" name="jam" value="jam">
+            <label for="ch-5">джемы</label>
+          </span>
+                    <button class="button-apply" type="submit" name="apply">Применить</button>
+                </div>
+            </fieldset>
+
         </form>
+
     </section>
     <section class="container catalog">
         <ul class="catalog-list">
@@ -235,13 +313,34 @@
                 <a class="button fast-view">Быстрый просмотр</a>
             </li>
         </ul>
-        <ul class="pagination">
-            <li><a href="#"> 1 </a></li>
-            <li><a href="#"> 2 </a></li>
-            <li><a href="#"> 3 </a></li>
-            <li><a href="#"> 4 </a></li>
-            <li><a href="#"> 5 </a></li>
-        </ul>
+        <div>
+            <a class="pagination-item prev" href="#">
+                <!--                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+                <!--                     width="8px" height="12px" viewBox="0 0 8 12" enable-background="new 0 0 8 12" xml:space="preserve" fill="#C1C6CE" d="M7.237,5.642L1.729,0.133c-0.198-0.198-0.519-0.198-0.716,0s-0.198,0.519,0,0.716L6.163,6l-5.151,5.15-->
+                <!--                             c-0.198,0.198-0.198,0.519,0,0.717c0.099,0.099,0.229,0.148,0.358,0.148c0.129,0,0.259-0.05,0.358-0.148l5.509-5.509&ndash;&gt;-->
+                <!--                           C7.436,6.16,7.436,5.84,7.237,5.642z"/>-->
+                <!--                </svg>-->
+                <span class="visually-hidden">Назад</span>
+            </a>
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current"><span>1</span></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item"><a href="#">4</a></li>
+                <li class="pagination-item"><a href="#">5</a></li>
+                <li class="pagination-item next">
+                </li>
+            </ul>
+            <a class="pagination-item next" href="#">
+                <!--                <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+                <!--                     width="8px" height="12px" viewBox="0 0 8 12" enable-background="new 0 0 8 12" xml:space="preserve" fill="#FFFFFF" d="M7.237,5.642L1.729,0.133c-0.198-0.198-0.519-0.198-0.716,0s-0.198,0.519,0,0.716L6.163,6l-5.151,5.15-->
+                <!--                    c-0.198,0.198-0.198,0.519,0,0.717c0.099,0.099,0.229,0.148,0.358,0.148c0.129,0,0.259-0.05,0.358-0.148l5.509-5.509-->
+                <!--                    C7.436,6.16,7.436,5.84,7.237,5.642z"/>-->
+
+                <!--                </svg>-->
+                <span class="visually-hidden">Дальше</span>
+            </a>
+        </div>
     </section>
 
 </main>
@@ -249,23 +348,24 @@
 <footer class="container footer">
     <nav class="footer-navigation">
         <ul class="footer-social">
-            <li class="footer-social_item twitter"><a class="social_item-link" href="#"></a></li>
-            <li class="footer-social_item instagram"><a class="social_item-link" href="#"></a></li>
-            <li class="footer-social_item facebook"><a class="social_item-link" href="#"></a></li>
-            <li class="footer-social_item vk"><a class="social_item-link" href="#"></a></li>
+            <li class="social_item-link"><a class="footer-social_item twitter" href="#"></a></li>
+            <li class="social_item-link"><a class="footer-social_item instagram" href="#"></a></li>
+            <li class="social_item-link"><a class="footer-social_item facebook" href="#"></a></li>
+            <li class="social_item-link"><a class="footer-social_item vk" href="#"></a></li>
         </ul>
         <ul class="navigation-list">
             <li class="navigation-item navigation-delivery"><a class="delivery-link" href="#">Для поставщиков</a></li>
-            <li class="navigation-item"><a href="#">Наши документы</a></li>
-            <li class="navigation-item"><a href="#">О производстве</a></li>
-            <li class="navigation-item"><a href="#">Экологические стандарты</a></li>
+            <li class="navigation-item"><a class="delivery-link" href="#">Наши документы</a></li>
+            <li class="navigation-item"><a class="delivery-link" href="#">О производстве</a></li>
+            <li class="navigation-item"><a class="delivery-link" href="#">Экологические стандарты</a></li>
         </ul>
         <div class="footer-copy">
             <a href="https://htmlacademy.ru" class="footer-logo">
                 <img src="img/icon/logo-htmlacademy.svg" width="100" height="50" alt="HTML ACADEMY"></a>
-            <span class="developer-link">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019</span>
+            <span class="developer-link">Сделано в <a class="delivery-link" href="https://htmlacademy.ru">HTML Academy</a> © 2019</span>
         </div>
     </nav>
+</footer>
 </footer>
 
 </body>
