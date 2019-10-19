@@ -2,27 +2,34 @@ var link = document.querySelector(".button_map-modal");
 var popup = document.querySelector(".modal-login");
 var close = popup.querySelector(".modal-close");
 var form = popup.querySelector(".modal-form");
-var name = popup.querySelector("[name=name]");
+var login = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
+var letter = popup.querySelector("[name=letter]");
 var isStorageSupport = true;
-var storage = "";
+var login_storage = "";
+var email_storage = "";
 
 try {
-    storage = localStorage.getItem("name");
+    login_storage = localStorage.getItem("login");
+} catch (err) {
+    isStorageSupport = false;
+}
+try {
+    email_storage = localStorage.getItem("email");
 } catch (err) {
     isStorageSupport = false;
 }
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
-    if (storage) {
-        name.value = storage;
-        email.focus();
+    if (email_storage) {
+        email.value = email_storage;
+    } if (login_storage) {
+        login.value = login_storage;
+        letter.focus();
     } else {
-        name.focus();
+        login.focus();
     }
-    name.focus();
-
 });
 close.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -30,15 +37,16 @@ close.addEventListener("click", function (evt) {
     popup.classList.remove("modal-error");
 });
 form.addEventListener("submit", function (evt) {
-    if (!name.value || !email.value) {
+    if (!login.value || !email.value || !letter.value) {
         evt.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
         popup.classList.add("modal-error");
-        console.log("Нужно ввести имя и почту");
     } else {
         if (isStorageSupport) {
-            localStorage.setItem("name", name.value);
+            localStorage.setItem("login", login.value);
+            localStorage.setItem("email", email.value);
         }
-        localStorage.setItem("name", name.value);
     }
 });
 window.addEventListener("keydown", function (evt) {
