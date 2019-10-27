@@ -10,7 +10,7 @@
 </head>
 
 <body>
-!!
+
 <header class="container header">
     <nav class="header_menu">
         <a class="header-logo"><img src="img/icon/logo.svg" width="154" height="64" alt="Логотип Глэйси!"></a>
@@ -36,12 +36,12 @@
                 <a class="header-link button-del" href="#">Доставка и оплата</a>
             </li>
             <li class="header-menu_item">
-                <a class="header-link button-inf" href="#">О компании</a>
+                <a class="header-link button-inf" href="#">О Компании</a>
             </li>
         </ul>
         <ul class="header-user_menu">
-            <li class="user-links">
-                <a class="button button_drop-img">
+            <li class="user-links button">
+                <a class="button_drop-img button-user">
                     <svg class="svg-find" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="#fff">
                         <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
                     </svg>
@@ -52,15 +52,15 @@
                     </p>
                 </form>
             </li>
-            <li class="header-login">
-                <a class="button button-login" href="#">
+            <li class="header-login button">
+                <a class="button-login button-user" href="#">
                     <svg class="svg-login" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="#f8f7f4">
                         <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
                         <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
                     </svg>
                     <span class="login-enter">Вход</span>
                 </a>
-                <form class="login-form dropdown" action="#" method="post">
+                <form class="login-form dropdown">
                     <fieldset class="login">
                         <p class="login-drop">
                             <label class="visually-hidden" for="user-login">e-mail</label>
@@ -68,18 +68,20 @@
                         </p>
                         <p class="login-drop">
                             <label class="visually-hidden" for="user-password">Пароль</label>
-                            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="*********">
+                            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="••••••••">
                         </p>
-                        <button class="button-enter" href="#">Войти</button>
-                        <p class="login-help">
-                            <a class="restore" href="#">Забыли пароль?</a>
-                            <a class="registration" href="#">Новая регистрация</a>
-                        </p>
+                        <div class="button-form-wrapper">
+                            <button class="button button-enter" href="#">Войти</button>
+                            <p class="login-help">
+                                <a class="restore" href="#">Забыли пароль?</a>
+                                <a class="registration" href="#">Новая регистрация</a>
+                            </p>
+                        </div>
                     </fieldset>
                 </form>
             </li>
-            <li class="header-buy">
-                <a class="button basket-button" href="#">
+            <li class="header-buy button">
+                <a class="basket-button button-user" href="#">
                     <svg class="svg-buy" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="#FFF">
                         <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
                         <circle cx="6.984" cy="18" r="2"/>
@@ -98,9 +100,9 @@
 <main>
 
     <section class="container main-promo">
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <input class="visually-hidden slider-radio" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden slider-radio" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden slider-radio" type="radio" id="product-3" name="toggle">
         <div class="site-wrapper">
             <div class="promo-section">
                 <div class="slider">
@@ -145,47 +147,55 @@
             <li class="features-blog_second">
                 <h3 class="features-item">Шоколадки даром!</h3>
                 <p class="features-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-                <a class="button-features" href="#">Хочу шоколадки!</a>
+                <a class="button-features shokolad" href="#">Хочу шоколадки!</a>
             </li>
         </ul>
     </section>
     <section class="container catalog">
         <ul class="catalog-list">
             <li class="catalog-item">
-                <a class="catalog-img" href="#">
-                    <img class="img-item" src="img/catalog/slivochnoe.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
-                <p class="catalog-item-price">310₽
-                    <span class="catalog-item-wt">/кг</span>
-                </p>
-                <a class="catalog-item-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                <a class="button fast-view">Быстрый просмотр</a>
+                <div class="hover-item">
+                    <a class="catalog-img" href="#">
+                        <img class="img-item" src="img/catalog/slivochnoe.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
+                    <p class="catalog-item-price">310₽
+                        <span class="catalog-item-wt"> /кг</span>
+                    </p>
+                    <a class="catalog-item-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                    <a class="button fast-view">Быстрый просмотр</a>
+                </div>
             </li>
             <li class="catalog-item">
-                <a class="catalog-img" href="#">
-                    <img class="img-item" src="img/catalog/sliv-shok.png" alt="Сливочно-кофейное с кусочками шоколада"></a>
-                <p class="catalog-item-price">380₽
-                    <span class="catalog-item-wt">/кг</span>
-                </p>
-                <a class="catalog-item-name" href="#">Сливочно-кофейное с кусочками шоколада </a>
-                <a class="button fast-view">Быстрый просмотр</a>
+                <div class="hover-item">
+                    <a class="catalog-img" href="#">
+                        <img class="img-item" src="img/catalog/sliv-shok.png" alt="Сливочно-кофейное с кусочками шоколада"></a>
+                    <p class="catalog-item-price">380₽
+                        <span class="catalog-item-wt"> /кг</span>
+                    </p>
+                    <a class="catalog-item-name" href="#">Сливочно-кофейное с кусочками шоколада </a>
+                    <a class="button fast-view">Быстрый просмотр</a>
+                </div>
             </li>
             <li class="catalog-item">
-                <a class="catalog-img" href="#">
-                    <img class="img-item" src="img/catalog/sliv-klub.png" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
-                <p class="catalog-item-price">355₽
-                    <span class="catalog-item-wt">/кг</span>
-                </p>
-                <a class="catalog-item-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                <a class="button fast-view">Быстрый просмотр</a>
+                <div class="hover-item">
+                    <a class="catalog-img" href="#">
+                        <img class="img-item" src="img/catalog/sliv-klub.png" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
+                    <p class="catalog-item-price">355₽
+                        <span class="catalog-item-wt"> /кг</span>
+                    </p>
+                    <a class="catalog-item-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                    <a class="button fast-view">Быстрый просмотр</a>
+                </div>
             </li>
             <li class="catalog-item">
-                <a class="catalog-img" href="#">
-                    <img class="img-item" src="img/catalog/krem-brule.png" alt="Сливочное крем-брюле с карамельной подливкой"></a>
-                <p class="catalog-item-price">415₽
-                    <span class="catalog-item-wt">/кг</span>
-                </p>
-                <a class="catalog-item-name" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-                <a class="button fast-view">Быстрый просмотр</a>
+                <div class="hover-item">
+                    <a class="catalog-img" href="#">
+                        <img class="img-item" src="img/catalog/krem-brule.png" alt="Сливочное крем-брюле с карамельной подливкой"></a>
+                    <p class="catalog-item-price">415₽
+                        <span class="catalog-item-wt"> /кг</span>
+                    </p>
+                    <a class="catalog-item-name" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                    <a class="button fast-view">Быстрый просмотр</a>
+                </div>
             </li>
         </ul>
     </section>
@@ -214,7 +224,7 @@
             <div class="send-background">
                 <p class="send-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form class="send-form" action="#" method="post">
-                    <input class="form-email" type="text" name="email" placeholder="Электронная почта" aria-label="Электронная почта">
+                    <input class="form-email" type="text" name="email" placeholder="email@example.com" aria-label="Электронная почта">
                     <button class="button button-send" type="submit">Отправить</button>
                 </form>
             </div>
@@ -222,16 +232,20 @@
     </section>
 
 
-    <section class="map">
-        <div class="container map-container">
+    <section class="map map-container">
+        <div class="map-block-wrapper container">
             <div class="map-block">
                 <p class="address-titles">Адрес главного офиса и офлайн-магазина:</p>
                 <p class="map-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-                <p class="address-titles">Для заказов по телефону:</p>
+                <p class="address-info">Для заказов по телефону:</p>
                 <p class="map-phone">8 812 450-25-25</p>
-                <p class="address-titles">(с 10 до 20 ежедневно)</p>
+                <p class="adress-time">(с 10 до 20 ежедневно)</p>
                 <button class="button button_map-modal" type="submit">Форма обратной связи</button>
             </div>
+        </div>
+        <div class="map-wrapper">
+            <p id="map" class="iframe-map"></p>
+            <!--            <img src="img/background/map.png" width="1200" height="430" alt="Местонахождение">-->
         </div>
     </section>
 
@@ -275,13 +289,13 @@
         </ul>
         <ul class="navigation-list">
             <li class="navigation-item navigation-delivery"><a class="delivery-link" href="#">Для поставщиков</a></li>
-            <li class="navigation-item"><a class="delivery-link" href="#">Наши документы</a></li>
             <li class="navigation-item"><a class="delivery-link" href="#">О производстве</a></li>
+            <li class="navigation-item"><a class="delivery-link" href="#">Наши документы</a></li>
             <li class="navigation-item"><a class="delivery-link" href="#">Экологические стандарты</a></li>
         </ul>
         <div class="footer-copy">
             <a href="https://htmlacademy.ru" class="footer-logo">
-                <img src="img/icon/logo-htmlacademy.svg" width="100" height="50" alt="HTML ACADEMY"></a>
+                <img src="img/icon/logo-htmlacademy.svg" width="108" height="39" alt="HTML ACADEMY"></a>
             <span class="developer-link">Сделано в <a class="delivery-link" href="https://htmlacademy.ru">HTML Academy</a> © 2019</span>
         </div>
     </nav>
@@ -294,11 +308,16 @@
         <p class="modal-name"><input class="name" name="name" type="text" required placeholder="Имя Фамилия"></p>
         <p class="modal-mail"><input class="email" name="email" type="email" required placeholder="email@example.com"></p>
         <textarea name="letter" class="text-input" placeholder="В свободной форме"></textarea>
+        <button class="button modal-button" type="submit">Отправить</button>
     </form>
-    <button class="modal-button button" type="submit">Отправить</button>
+
 </section>
 
 <script src="js/popup.js"></script>
+<script src="js/bodyColor.js"></script>
+<script src="js/initMap.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLmaqyUE-6OVcrE7xp1stac7ZiVdyzVo0&callback=initMap"></script>
+
 
 </body>
 </html>
