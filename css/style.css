@@ -588,7 +588,7 @@ img {
     background-color: #f8f7f4;
     width: 100%;
     border-radius: 5px 5px 0 0;
-
+    position: relative;
 }
 
 .row-img {
@@ -607,6 +607,8 @@ img {
     margin-right: 27px;
     width: 220px;
     text-align: left;
+    padding-top: 11px;
+    align-self: flex-start;
 }
 
 .row-item-calculate {
@@ -616,6 +618,16 @@ img {
 
 .buy-row-price {
     position: relative;
+}
+
+.buy-table:before {
+    position: absolute;
+    content: " ";
+    bottom: 35px;
+    left: 0;
+    background-color: #cacac7;
+    width: 100%;
+    height: 1px;
 }
 
 .table-cart .buy-row {
