@@ -895,9 +895,9 @@ img {
     height: 228px;
 }
 
-/*.advantage-container {*/
-/*    !*color: #323232;*!*/
-/*}*/
+.advantage-container {
+    margin-top: -45px;
+}
 
 .advantage-title {
     /*width: 1000px;*/
