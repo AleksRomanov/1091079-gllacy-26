@@ -1,5 +1,5 @@
 var link = document.querySelector(".button_map-modal");
-var popup = document.querySelector(".modal-login");
+var popup = document.querySelector(".modal-background");
 var close = popup.querySelector(".modal-close");
 var form = popup.querySelector(".modal-form");
 var login = popup.querySelector("[name=name]");
