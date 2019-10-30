@@ -1211,16 +1211,17 @@ img {
     opacity: 0.8;
 }
 
+.footer-social_item:focus .svg-footer-social,
 .footer-social_item:hover .svg-footer-social {
     opacity: 1;
 }
 
+.footer-social_item:focus,
 .footer-social_item:hover {
     border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
 
-.footer-social_item:focus .svg-footer-social,
 .footer-social_item:active .svg-footer-social,
 .svg-footer-social:active {
     fill: #e9e9e9;
