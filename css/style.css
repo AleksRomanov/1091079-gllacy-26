@@ -1389,6 +1389,7 @@ img {
 }
 
 .catalog-item-name {
+    width: 267px;
     padding: 0px 9px;
     text-align: center;
     font-size: 16px;
