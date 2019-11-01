@@ -16,12 +16,12 @@
         <a class="header-logo" href="index.html"><img src="img/icon/logo.svg" width="154" height="64" alt="Логотип Глэйси!"></a>
         <ul class="header-navigation">
             <li class="header-menu_item menu_item-active">
-                <a class="header-link button-link" href="catalog.html">Каталог</a>
+                <a class="header-link button-link">Каталог</a>
                 <div class="dropdown menu-wrapper">
                     <ul class="dropdown-menu">
                         <li class="dropdown-item"><a class="dropdown-link" href="#">Новинки</a>
                         </li>
-                        <li class="dropdown-item active-page"><a class="dropdown-link" href="#">Сливочное</a>
+                        <li class="dropdown-item"><a class="dropdown-link" href="#">Сливочное</a>
                         </li>
                         <li class="dropdown-item"><a class="dropdown-link" href="#">Щербеты</a>
                         </li>
@@ -41,15 +41,16 @@
         </ul>
         <ul class="header-user_menu">
             <li class="user-links button">
-                <a class="button_drop-img button-user">
+                <a class="button_drop-img button-user" href="#">
                     <svg class="svg-find" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="#fff">
                         <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
                     </svg>
                 </a>
-                <form class="find dropdown">
-                    <p class="form-drop">
-                        <input class="drop-find" type="search" placeholder="Крем-брюле">
-                    </p>
+                <form class="dropdown find">
+                    <a class="form-drop">
+                        <label class="visually-hidden" for="find-item">Поиск</label>
+                        <input class="drop-find" id="find-item" type="search" name="find" placeholder="Крем-брюле">
+                    </a>
                 </form>
             </li>
             <li class="header-login button">
@@ -92,7 +93,7 @@
                             <tbody class="table-cart">
                             <tr class="buy-row">
                                 <td class="row-item row-item-remove">
-                                    <button class="item-close"></button>
+                                    <button class="item-close" aria-label="Удалить товар из корзины"></button>
                                 </td>
                                 <td class="row-item row-item-image">
                                     <img class="row-img" src="img/catalog/slivochnoe_small.png" width="35" height="35" alt="Пломбир с апельсиновым джемом">
@@ -103,7 +104,7 @@
                             </tr>
                             <tr class="buy-row">
                                 <td class="row-item row-item-remove">
-                                    <button class="item-close"></button>
+                                    <button class="item-close" aria-label="Удалить товар из корзины"></button>
                                 </td>
                                 <td class="row-item row-item-image">
                                     <img class="row-img" src="img/catalog/sliv-klub_small.png" width="35" height="35" alt="Клубничный пломбир с присыпкой  из белого шоколада">
@@ -121,13 +122,14 @@
                     </fieldset>
                 </form>
             </li>
+
         </ul>
     </nav>
     <p class="header-call">С 10 до 20, ежедневно<br>
         <a href="tel:+88124502525" class="call-number">8 812 450-25-25</a>
     </p>
-
 </header>
+
 
 <main class="main">
 
