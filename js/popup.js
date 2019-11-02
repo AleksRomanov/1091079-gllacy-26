@@ -24,7 +24,8 @@ link.addEventListener("click", function (evt) {
     popup.classList.add("modal-show");
     if (email_storage) {
         email.value = email_storage;
-    } if (login_storage) {
+    }
+    if (login_storage) {
         login.value = login_storage;
         letter.focus();
     } else {
