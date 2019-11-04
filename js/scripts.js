@@ -18,7 +18,7 @@ var onThirdRadioClick = function () {
 };
 
 
-SliderRadioElements.forEach(function(radio) {
+SliderRadioElements.forEach(function (radio) {
     if (radio.id === "product-1") {
         radio.addEventListener('change', onFirstRadioClick);
     } else if (radio.id === "product-2") {
@@ -27,7 +27,6 @@ SliderRadioElements.forEach(function(radio) {
         radio.addEventListener('change', onThirdRadioClick);
     }
 })
-
 
 
 var link = document.querySelector(".button_map-modal");
@@ -116,7 +115,7 @@ function initMap() {
         map: map,
         icon: {
             url: '../img/icon/pin.svg',
-            scaledSize: new google.maps.Size(markerWidth, markerHeight),
+            scaledSize: new google.maps.Size(markerWidth, markerHeight)
         }
     });
 
