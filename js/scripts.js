@@ -114,7 +114,7 @@ function initMap() {
         position: coordinatesMarker,
         map: map,
         icon: {
-            url: "../img/icon/pin.svg",
+            url: "../img/icon/pin.png",
             scaledSize: new google.maps.Size(markerWidth, markerHeight)
         }
     });
