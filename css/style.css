@@ -1173,7 +1173,7 @@ img {
     padding: 0;
     position: absolute;
     width: 100%;
-    z-index: 200;
+    /*z-index: 200;*/
     top: 0;
 }
 
@@ -1220,7 +1220,7 @@ img {
 
 .map-block {
     position: absolute;
-    z-index: 2;
+    /*z-index: 2;*/
     color: black;
     width: 302px;
     height: 305px;
